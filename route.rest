@@ -1,35 +1,45 @@
 GET http://localhost:3000/users
 
 ###
-GET http://localhost:3000/users/65c973f5bcebada00e294593
+GET http://localhost:3000/users/65c97e7fcf745ba5c5697222
 
 ###
 POST http://localhost:3000/users/
 Content-Type: application/json
 
 {
-  "username": "JohnDoe",
-  "email": "john.doe@example.com",
-  "city": "New York",
-  "website": "https://www.example.com",
-  "zipCode": "12345-6789",
-  "phone": "1-123-456-7890"
-}
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031",
+    "website": "http://hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  }
 
 ###
-PATCH http://localhost:3000/users/65c973f5bcebada00e294593
+PATCH http://localhost:3000/users/65c97e7fcf745ba5c5697222
 Content-Type: application/json
 
 {
   "username": "JohnDoe",
-  "email": "john.doe@example.com",
-  "city": "New York",
-  "website": "https://www.example.com",
-  "zipCode": "12345-6789",
-  "phone": "1-123-456-7890"
+  "email": "john.doe@example.com"
 }
 
 ###
-DELETE http://localhost:3000/users/65c97a9745335fe94bc0a0fb
+DELETE http://localhost:3000/users/65c97e7fcf745ba5c5697222
 
 ###

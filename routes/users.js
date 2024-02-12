@@ -1,3 +1,6 @@
+//100875122
+//Carl Wright
+
 const express = require("express");
 const router = express.Router();
 const User = require("../models/user");
@@ -47,7 +50,7 @@ router.patch("/:id", getUser, async (req, res) => {
 // Delete
 router.delete("/:id", getUser, async (req, res) => {
   try {
-    const deletedUser = await User.findOneAndDelete(res.user);
+    const deletedUser = await User.findByIdAndDelete(res.user._id);
     res.json({ message: `${deletedUser.username} has been deleted` });
   } catch (err) {
     res.status(400).json({ message: err.message });
