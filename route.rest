@@ -1,0 +1,35 @@
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/users/65c973f5bcebada00e294593
+
+###
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+  "username": "JohnDoe",
+  "email": "john.doe@example.com",
+  "city": "New York",
+  "website": "https://www.example.com",
+  "zipCode": "12345-6789",
+  "phone": "1-123-456-7890"
+}
+
+###
+PATCH http://localhost:3000/users/65c973f5bcebada00e294593
+Content-Type: application/json
+
+{
+  "username": "JohnDoe",
+  "email": "john.doe@example.com",
+  "city": "New York",
+  "website": "https://www.example.com",
+  "zipCode": "12345-6789",
+  "phone": "1-123-456-7890"
+}
+
+###
+DELETE http://localhost:3000/users/65c97a9745335fe94bc0a0fb
+
+###
